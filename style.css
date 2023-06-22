@@ -415,19 +415,21 @@ h3.my-profession {
     max-width: 40%;
     margin-top: 40px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .about .about-content .skills .skill-item {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-top: 15px;
 }
 
 .about .about-content .skills .skill-item h5 {
-    /* margin-top: 10px; */
-    /* line-height: 15px; */
+    /* margin: 10px;
+    line-height: 15px; */
+    padding-bottom: 10px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     color: var(--text-black-900);
     text-transform: capitalize;
 }
@@ -633,6 +635,7 @@ h3.my-profession {
     flex: 0 0 50%;
     margin-bottom: 50%;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .portfolio .portfolio-item-inner {
@@ -652,10 +655,13 @@ h3.my-profession {
     display: block;
 }
 
-.portfolio .portfolio-item p {
-    margin-top: 10px;
-    text-align: center;
+.portfolio .portfolio-item a {
+    margin-top: 15px;
     color: var(--text-black-900);
+}
+.portfolio .portfolio-item p {
+    font-size: 15px;
+    color: var(--text-black-700);
 }
 
 .portfolio .portfolio-item-inner:hover {
@@ -711,6 +717,8 @@ h3.my-profession {
 
 .contact .contact-info-item .icon {
     display: inline-block;
+    color: #ec1839;
+    font-size: 25px;
 }
 
 .contact .contact-info-item .icon .fa {
@@ -726,9 +734,32 @@ h3.my-profession {
     margin: 15px 0 5px;
 }
 
-.contact .contact-info-item p {
+.contact .contact-info-item a {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
     font-weight: 700;
+}
+.mob-container{
+    display: none;
+}
+@media (max-width: 900px){
+
+    .main-container{
+        display: none;
+    }
+    .mob-container{
+        display: flex;
+    }
+
+    .mob-container h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .mob-container p {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
